@@ -6,6 +6,7 @@ while True:
     score = idinp[1]
     if ids == "done" and score == '0':
         break
+
     else:
         if len(ids) == 4:
             if ids.isnumeric():
