@@ -1,6 +1,7 @@
 from operator import itemgetter
 name = []
 score = []
+#d = {name:score, }
 
 while True:
     name_score = input("Enter student name and score: ").split()
@@ -24,10 +25,9 @@ while True:
             print("Invalid score!")
 
 def OutPut():
-    
-        f = sorted(zip(name, score), key=itemgetter(1), reverse=True)
-        for n,s in f:
-            print("%s\t%s" %(n,s))
+    #   0 1                 0      1
+    for n,s in sorted(zip(name, score), key=itemgetter(1), reverse=True):
+        print("%s\t%s" %(n,s))
     
 
 if name and score:

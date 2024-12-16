@@ -11,14 +11,7 @@ grades = data[:,1:].astype(float)
 def gpa(row, credits):
     summ = [grade * cred for grade, cred in zip(row,credits)]
     summ = sum(summ)
-
-    """
-    summm = []
-    for grade, cred in zip(row,credits):
-        mult = grade * cred
-        summm.append(mult)
-    sum(summm)
-"""
+    
     gpa = summ/sum(credits)
     return gpa
 

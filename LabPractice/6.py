@@ -42,7 +42,7 @@ def avg():
 
 print("List: ")
 
-if d:
+if d: #dic ว่าง = False, dic มีข้อมูล = True
     for k,v in sorted(d.items()):
         print("%s %s" %(k,v))
     print("There are %d student(s). the average score is %.2f points" %(c, avg()))

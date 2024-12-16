@@ -12,7 +12,7 @@ while len(characters) < 9:
 
 if len(characters) == 9:
 
-    print("-------")
+    print("-------") # 0 3 6
     for i in range(0, 9, 3):
         print("|%s|%s|%s|" % (characters[i], characters[i+1], characters[i+2]))
         print("-------")

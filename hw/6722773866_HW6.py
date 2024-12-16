@@ -4,12 +4,12 @@ def dist(p1, p2):
     distance = np.sqrt(np.sum((p1-p2)**2))
     return distance
 
-p = []
+p = [] #[[x1,y1,z1],[x2,y2,z2]]
 c = 0
 Tr = True
 while True:
     x = input("P%d: "%(c+1))
-
+    
     if x.lower() == 'end':
         break
     try:

@@ -24,7 +24,7 @@ matrix1 = np.array(matrix1)
 matrix2 = np.array(matrix2)
 
 imatrix1 = np.linalg.inv(matrix1)
-
+    
 mul =np.matmul(imatrix1, matrix2)
 
 print(mul)

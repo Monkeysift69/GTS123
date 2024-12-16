@@ -6,6 +6,7 @@ d = {
 }
 
 c = 0
+
 print("Welcome to coin deposit machine")
 while True:
     x = input("Please insert coin: ")
